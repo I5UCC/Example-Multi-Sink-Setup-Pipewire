@@ -14,7 +14,7 @@ It creates 3 passive virtual sinks that target to the easyeffects sink:
 
 ## Setup
 
-- Place 01-virtual-channels.conf your home directorys config folder (create folders if don't exist):
+- Place [01-virtual-channels.conf](https://raw.githubusercontent.com/I5UCC/Example-Multi-Sink-Setup-Pipewire/refs/heads/main/01-virtual-channels.conf) your home directorys config folder (create folders if don't exist):
 
 ```bash
 .config/pipewire/pipewire.conf.d
@@ -46,4 +46,4 @@ pactl set-sink-volume media_output +2%
 
 ## Default Volumes Script
 
-The bash script `set_default_volumes.sh` sets a set of default volumes set in the variables `MAIN_VOLUME`, `MEDIA_VOLUME` and `VOICE_VOLUME`, and the variable `HARDWARE_SINK` should be replaced by your hardware sink name. You can set it up as an autostart so default volumes are set at the start of your os.
+The bash script [set_default_volumes.sh](https://raw.githubusercontent.com/I5UCC/Example-Multi-Sink-Setup-Pipewire/refs/heads/main/set_default_volumes.sh) sets a set of default volumes set in the variables `MAIN_VOLUME`, `MEDIA_VOLUME` and `VOICE_VOLUME`, and the variable `HARDWARE_SINK` should be replaced by your hardware sink name. You can set it up as an autostart so default volumes are set at the start of your os.
